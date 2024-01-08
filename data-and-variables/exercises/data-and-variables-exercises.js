@@ -10,19 +10,20 @@
 
 // Print the results of the trip to the moon below
 
-const nameOfSpaceShuttle = "Determination";
+let nameOfSpaceShuttle = "Determination";
 let shuttleSpeed = 17500;
-const distanceToMars = 225000000;
-const distanceToMoon =384400;
-let milesPerKilomoter = 0.621; 
+let distanceToMars = 225000000;
+let distanceToMoon =384400;
+const milesPerKilomoter = 0.621; 
 let milesToMars = distanceToMars * milesPerKilomoter;
-const hoursToMars = milesToMars / shuttleSpeed;
-const daysToMars = hoursToMars / 24;
-const milesToMoon = milesToMars * shuttleSpeed;
-const daysToMoon = milesToMoon / 24;
+let hoursToMars = milesToMars / shuttleSpeed;
+let daysToMars = hoursToMars / 24;
+let milesToMoon = milesToMars * shuttleSpeed;
+let daysToMoon = milesToMoon / 24;
 
 
-
+console.log(2 ** 8)
+console.log(1 + 5 % 3)
 console.log(milesToMars, hoursToMars, daysToMars)
 console.log(typeof nameOfSpaceShuttle);
 console.log(typeof shuttleSpeed);
