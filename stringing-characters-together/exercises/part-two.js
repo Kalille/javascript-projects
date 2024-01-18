@@ -22,8 +22,8 @@ console.log(dna);
 let dnaTwo = "TCG-TAC-GAC-TAC-CGT-CAG-ACT-TAA-CCA-GTC-CAT-AGA-GCT";
 
 //1) Replace the gene "GCT" with "AGG", and then print the altered strand.
-// dnaTwo = dna.replace("GCT","AGG" )
-// console.log(dnaTwo)
+dnaTwo = dna.replace("GCT","AGG" )
+console.log(dnaTwo)
 
 //2) Look for the gene "CAT" with ``indexOf()``. If found print, "CAT gene found", otherwise print, "CAT gene NOT found".
 let indexOfCat = dnaTwo.indexOf("CAT")
