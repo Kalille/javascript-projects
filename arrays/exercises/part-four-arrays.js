@@ -4,7 +4,13 @@ let holdCabinet2 = ['orange drink', 'nerf toys', 'camera', 42, 'parsnip'];
 //Explore the methods concat, slice, reverse, and sort to determine which ones alter the original array.
 
 //1) Print the result of using concat on the two arrays. Does concat alter the original arrays? Verify this by printing holdCabinet1 after using the method.
-
+// let arr = holdCabinet1.concat(holdCabinet2)
+// console.log(holdCabinet1.concat(holdCabinet2))
 //2) Print a slice of two elements from each array. Does slice alter the original arrays?
-
+// let newCabOne = holdCabinet1.slice(0,2);
+// let newCabTwo = holdCabinet2.slice(2,4);
+// console.log(newCabOne,newCabTwo)
 //3) reverse the first array, and sort the second. What is the difference between these two methods? Do the methods alter the original arrays?
+let reversed = holdCabinet1.reverse();
+let sorted = holdCabinet2.sort();
+console.log(sorted)
