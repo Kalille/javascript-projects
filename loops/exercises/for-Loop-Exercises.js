@@ -64,7 +64,8 @@ let total = 0
     console.log(newStr.reverse().join(""))
   }
 
-reversedString()
+reversedString();
+
   for (i = 0; i < arr.length; i++){
     
     console.log(arr[i])
