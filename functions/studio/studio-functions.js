@@ -1,7 +1,20 @@
 //We want to COMPLETELY reverse an array by flipping the order of the entries AND flipping the order of characters in each element.
 
 // Part One: Reverse Characters
-
+const reverseCharacters=(string1)=>{
+    if(typeof string1 === "string"){
+        let num = 6;
+        console.log(typeof num)
+        return string1.split("").reverse().join("")
+    }
+   else if (typeof string1 === "number"){
+    let num = String(string1).split("").reverse().join("");
+    // console.log(num);
+    return num
+   }
+}
+let newString = "I put my thang down, flip it and reverse it"
+console.log(reverseCharacters(25))
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
 // 2. Within the function, split the string into an array, then reverse the array.
 // 3. Use join to create the reversed string and return that string from the function.
@@ -18,7 +31,14 @@
 // 5. Be sure to print the result returned by the function to verify that your code works for both strings and numbers. Do this before moving on to the next exercise.
 
 // Part Three: Complete Reversal
+let emptyArray = [];
 
+const completeReversal=(array)=>{
+    array.map((data)=>{
+      emptyArray.push(reverseCharacters(data))  
+    });
+    return emptyArray
+}
 // 1. Define and initialize an empty array.
 // 2. Loop through the old array.
 // 3. For each element in the old array, call reverseCharacters to flip the characters or digits.
@@ -29,14 +49,41 @@
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
-
+console.log(completeReversal(arrayTest1))
 // Bonus Missions
 
 // 1. Have a clear, descriptive name like funPhrase.
 // 2. Retrieve only the last character from strings with lengths of 3 or less.
 // 3. Retrieve only the first 3 characters from strings with lengths larger than 3.
 // 4. Use a template literal to return the phrase We put the '___' in '___'. Fill the first blank with the modified string, and fill the second blank with the original string.
+// const funPhrase=(string)=>{
 
+//     if(string.length < 3){
+//         // let lastElement = string.pop()
+//         console.log("inside if statement")
+//     }
+//     else if(string.length > 3){
+//         console.log(string.slice(0,3))
+//     }
+
+// }
+const funPhrase=(string)=>{
+    let lastOne = [];
+    let firstThree = [];
+
+    if (string.length <= 3) {
+        lastOne.push(string.slice(-1))
+   
+        console.log(`We put the ${lastOne} in ${string}! `)
+    }
+    else if (string.length >= 3) {
+        firstThree.push(string.slice(0,3))
+        console.log(`We put the ${firstThree} in ${string}! `)
+    }
+   
+}
+
+funPhrase("Functions rock!")
 // Test Function
 
 // 1. Outside of the function, define the variable str and initialize it with a string (e.g. 'Functions rock!').
