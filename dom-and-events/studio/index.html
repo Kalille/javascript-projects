@@ -23,18 +23,18 @@
                 <img src = "LaunchCode_rocketline_white.png" height = "75" width = "75" id = "rocket"/>
             </div>
             <div class="center-block">
-                <button id="up">Up</button>
-                <button id="down">Down</button>
-                <button id="right">Right</button>
-                <button id="left">Left</button>
+                <button id="up" onclick="handleUpButton()">Up</button>
+                <button id="down" onclick="handleDownButton()" >Down</button>
+                <button id="right" onclick="rightButton()">Right</button>
+                <button id="left" onclick="leftButton()">Left</button>
                 <h3>Space Shuttle Height</h3>
                 <p id="spaceShuttleHeight">0</p><span> miles</span>
             </div>
         </div>
         <div class="centered">
-            <button id = "takeoff">Take off</button>
-            <button id = "landing">Land</button>
-            <button id = "missionAbort">Abort Mission</button>
+            <button id = "takeoff" onclick="handleTakeOff()">Take off</button>
+            <button id = "landing" onclick="handleLandButton()">Land</button>
+            <button id = "missionAbort" onclick="handAbortMissionButtun()">Abort Mission</button>
         </div>
     </body>
 </html>
