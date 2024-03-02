@@ -23,15 +23,13 @@ form.addEventListener("submit", function(e){
 });
 
 function searchEngine(e, engines, engineUrl, form){
-    e.preventDefault()
+    e.preventDefault();
     for (let i = 0; i < engines?.length; i++){
-    let urlResponse;
-    let formAction;
+    // let urlResponse;
+    // let formAction;
      if (engines[i]?.checked){
-        urlResponse = engines[i].value
-     formAction = form.action = engineUrl[urlResponse]
-     }else{
-        console.log("pleace pick one")
+        // urlResponse = engines[i].value
+     form.action = engineUrl[engines[i].value]
      }
   }
  }
