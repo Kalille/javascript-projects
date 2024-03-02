@@ -2,18 +2,40 @@
 
 <head>
 	<meta charset="utf-8">
-	<script>
+	<script src="./scripts.js">
 		// TODO: create a handler
-    window.addEventListener("load", function(){
-        // TODO: register the handler
-    });
+    // window.addEventListener("load", function(){
+    //     // TODO: register the handler
+	// 	// function setSearchEngine(e){
+	// 	// 	e.preventDefault()
+	// 			console.log("hello")
+	// 	// }
+    // });
 	</script>
 </head>
 
 <body>
 
-	<form id="searchForm">
+	<form method="get" onsubmit="searchEngine(event)" action="" id="searchForm">
     <!-- TODO: add form elements -->
+	<label><input type="text" name="q" placeholder="Enter"/></label>
+	<label><input id="google"name="engine" type="radio" value="google" /> Google</label>
+	<label><input id="duckDuckGo" name="engine" type="radio" value="duckDuckGo" />DuckDuckGo</label>
+	<label><input id="bing" name="engine" type="radio" value="bing" />Bing</label>
+	<label><input id="ask" name="engine" type="radio" value="ask"/>Ask</label>
+	<button  type="submit">Goooooo!!</button>
 	</form>
+	<!-- <script>
+		function searchEngine(e){
+
+    e.preventDefault()
+console.log("clicked")
+    let urlResponse;
+//  for (let i = 0; i > engines.length; i++){
+    
+//     console.log(engines[i])
+//  }
+}
+	</script> -->
 
 </body>
