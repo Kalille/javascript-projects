@@ -17,7 +17,7 @@ fetch("https://handlers.education.launchcode.org/static/astronauts.json")
         <h2>${data.firstName} ${data.lastName}</h2>
         <p>Hours in space: ${data.hoursInSpace}</p>
         <p>Active: ${data.active}</p>
-        <img src="${data.picture}" alt="${data.firstName} ${data.lastName}">
+        <img style="height: 250px" src="${data.picture}" alt="${data.firstName} ${data.lastName}">
     `;
 
     container.appendChild(astroDiv)
